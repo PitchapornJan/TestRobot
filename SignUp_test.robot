@@ -8,22 +8,24 @@ ${DELAY}    0.02
 
 
 *** Test Case ***
-Open Event Registration Page
+
+Input All Data
     Open Browser    ${WELCOME URL}    ${BROWSER}
     Location Should Be    ${WELCOME URL}
-	
-Input All Data
     Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
     Input Text             fname            Oliver
     Input Text             lname            Star
-    Input Text             username         Ohmymymy
+    Input Text             username         renkizer
     Input Password         password            12345
     Input Text             email            oliv@gmail.com
     Select From List By Index       user_role        1
     Click Button             submit
     Wait Until Page Contains        ลงทะเบียนสำเร็จ
+    Close Browser
 	
 No Input Image
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
     Input Text             fname            Make
     Input Text             lname            Star
     Input Text             username         Two
@@ -32,19 +34,24 @@ No Input Image
     Select From List By Index       user_role        0
     Click Button             submit
     Wait Until Page Contains        ลงทะเบียนไม่สำเร็จ กรุณาลองใหม่อีกครั้ง
+    Close Browser
 	
 No Input First Name
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
 	Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
-    Input Text             fname            Oliver
     Input Text             lname            Fish
     Input Text             username         FishOil
     Input Password         password            12345
     Input Text             email            oliv@gmail.com
     Select From List By Index       user_role        1
     Click Button             submit
-    Wait Until Page Contains        กรุณากรอกข้อมูลให้ครบ
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
+    Close Browser
 	
 No Input Last Name
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
     Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
     Input Text             fname            Four
     Input Text             username         FourStar
@@ -52,9 +59,11 @@ No Input Last Name
     Input Text             email            four@gmail.com
     Select From List By Index       user_role        1
     Click Button             submit
-    Wait Until Page Contains        กรุณากรอกข้อมูลให้ครบ
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
 	
 No Input User Name
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
     Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
     Input Text             fname            Five
     Input Text             lname            Star
@@ -62,9 +71,12 @@ No Input User Name
     Input Text             email            five@gmail.com
     Select From List By Index       user_role        1
     Click Button             submit
-    Wait Until Page Contains        กรุณากรอกข้อมูลให้ครบ
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
+    Close Browser
 	
 No Input Password
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
     Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
     Input Text             fname            Six
     Input Text             lname            Star
@@ -72,9 +84,12 @@ No Input Password
     Input Text             email            six@gmail.com
     Select From List By Index       user_role        1
     Click Button             submit
-    Wait Until Page Contains        กรุณากรอกข้อมูลให้ครบ
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
+    Close Browser
 	
 No Input Email
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
     Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
     Input Text             fname            Seven
     Input Text             lname            Star
@@ -82,39 +97,68 @@ No Input Email
     Input Password         password            12345
     Select From List By Index       user_role        1
     Click Button             submit
-    Wait Until Page Contains        กรุณากรอกข้อมูลให้ครบ
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
+    Close Browser
 	
 Input Only Image
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
     Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
 	Click Button             submit
-    Wait Until Page Contains        กรุณากรอกข้อมูลให้ครบ
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
+    Close Browser
 
 Input Only First Name
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
     Input Text             fname            Octo
 	Click Button             submit
-    Wait Until Page Contains        กรุณากรอกข้อมูลให้ครบ
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
+    Close Browser
 	
 Input Only Last Name
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
     Input Text             lname            Star
     Click Button             submit
-    Wait Until Page Contains        กรุณากรอกข้อมูลให้ครบ
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
+    Close Browser
 
 Input Only User Name
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
     Input Text             username         eleven
     Click Button             submit
-    Wait Until Page Contains        กรุณากรอกข้อมูลให้ครบ
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
+    Close Browser
 	
 Input Only Password
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
     Input Password         password            12345
     Click Button             submit
-    Wait Until Page Contains        กรุณากรอกข้อมูลให้ครบ
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
+    Close Browser
 	
 Input Only Email
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
     Input Text             email            third@gmail.com
     Click Button             submit
-    Wait Until Page Contains        กรุณากรอกข้อมูลให้ครบ
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
+    Close Browser
 	
 Choose Only User Role
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
     Select From List By Index       user_role        1
     Click Button             submit
-    Wait Until Page Contains        กรุณากรอกข้อมูลให้ครบ
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
+    Close Browser
+	
+No Input Data
+    Open Browser    ${WELCOME URL}    ${BROWSER}
+    Location Should Be    ${WELCOME URL}
+    Click Button             submit
+    Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
+    Close Browser
