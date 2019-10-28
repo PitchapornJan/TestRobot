@@ -22,6 +22,7 @@ Click Button Product Backlog Of Product Owner
     Click Element                  xpath: //*[contains(text(), "PRODUCT BACKLOG")]        
     Location Should Contain        http://localhost/Scrum/backlog_item.php
     Title Should Be                Scrum Board
+    Wait Until Page Contains       แก้ไข Product Backlog
     Close Browser
 
 Click Button Product Backlog Of Development Team
@@ -35,7 +36,8 @@ Click Button Product Backlog Of Development Team
 	
     Click Element                  xpath: //*[contains(text(), "PRODUCT BACKLOG")]        
     Location Should Contain        http://localhost/Scrum/backlog_item.php
-    Title Should Be                Scrum Board
+    Title Should Be                  Scrum Board
+    Wait Until Page Contains         	แสดง Sprint Backlog
     Close Browser
 	
 Click Button Product Backlog Of Scrum Master
@@ -50,6 +52,7 @@ Click Button Product Backlog Of Scrum Master
     Click Element                  xpath: //*[contains(text(), "PRODUCT BACKLOG")]        
     Location Should Contain        http://localhost/Scrum/backlog_item.php
     Title Should Be                Scrum Board
+    Wait Until Page Contains       แสดง Team Development
     Close Browser
 	
 	
