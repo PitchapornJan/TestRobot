@@ -12,7 +12,7 @@ ${DELAY}    0.02
 Input All Data
     Open Browser    ${SIGNUP URL}    ${BROWSER}
     Location Should Be    ${SIGNUP URL}
-    Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
+    Choose File          id=image            C:/xampp/htdocs/Scrum/images/user.jpg
     Input Text             fname            Oliver
     Input Text             lname            Star
     Input Text             username         renkizer
@@ -39,7 +39,7 @@ No Input Image
 No Input First Name
     Open Browser    ${SIGNUP URL}    ${BROWSER}
     Location Should Be    ${SIGNUP URL}
-	Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
+	Choose File          id=image            C:/xampp/htdocs/Scrum/images/user.jpg
     Input Text             lname            Fish
     Input Text             username         FishOil
     Input Password         password            12345
@@ -52,7 +52,7 @@ No Input First Name
 No Input Last Name
     Open Browser    ${SIGNUP URL}    ${BROWSER}
     Location Should Be    ${SIGNUP URL}
-    Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
+    Choose File          id=image            C:/xampp/htdocs/Scrum/images/user.jpg
     Input Text             fname            Four
     Input Text             username         FourStar
     Input Password         password            12345
@@ -64,7 +64,7 @@ No Input Last Name
 No Input User Name
     Open Browser    ${SIGNUP URL}    ${BROWSER}
     Location Should Be    ${SIGNUP URL}
-    Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
+    Choose File          id=image            C:/xampp/htdocs/Scrum/images/user.jpg
     Input Text             fname            Five
     Input Text             lname            Star
     Input Password         password            12345
@@ -77,7 +77,7 @@ No Input User Name
 No Input Password
     Open Browser    ${SIGNUP URL}    ${BROWSER}
     Location Should Be    ${SIGNUP URL}
-    Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
+    Choose File          id=image            C:/xampp/htdocs/Scrum/images/user.jpg
     Input Text             fname            Six
     Input Text             lname            Star
     Input Text             username         six
@@ -90,7 +90,7 @@ No Input Password
 No Input Email
     Open Browser    ${SIGNUP URL}    ${BROWSER}
     Location Should Be    ${SIGNUP URL}
-    Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
+    Choose File          id=image            C:/xampp/htdocs/Scrum/images/user.jpg
     Input Text             fname            Seven
     Input Text             lname            Star
     Input Text             username         seven
@@ -103,7 +103,7 @@ No Input Email
 Input Only Image
     Open Browser    ${SIGNUP URL}    ${BROWSER}
     Location Should Be    ${SIGNUP URL}
-    Choose File          id=image            C:/xampp/htdocs/Scrum/ImagePro/bg.png
+    Choose File          id=image            C:/xampp/htdocs/Scrum/images/user.jpg
 	Click Button             submit
     Wait Until Page Contains        กรุณกรอกข้อมูลให้ครบ
     Close Browser
