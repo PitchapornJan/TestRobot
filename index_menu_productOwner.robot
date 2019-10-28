@@ -26,7 +26,7 @@ Click Menu Choose Product Backlog Item
     Click Element                  xpath: //*[contains(text(), "Product Backlog items")]
 	Location Should Contain        ${BACKLOG URL}
     Title Should Be                Scrum Board
-    Wait Until Page Contains        USER STORY
+    Wait Until Page Contains        แก้ไข Product Backlog
     Close Browser
 	
 Click Menu Choose Profile
